@@ -13,7 +13,24 @@
   </header>
 
   <main id="quiz-container">
-    <!-- Quiz will be dynamically generated -->
+    <div id="start-screen">
+    <button id="start-btn">Start Quiz</button>
+  </div>
+
+    <div id="question-screen" class="hide">
+        <h2 id="question-text"></h2>
+        <div id="choices-container"></div>
+    </div>
+
+    <div id="end-screen" class="hide">
+        <h2>Quiz Finished!</h2>
+        <p>Your score: <span id="final-score"></span></p>
+        <label for="initials">Enter initials: </label>
+        <input type="text" id="initials" />
+        <button id="submit-score">Submit</button>
+    </div>
+
+    <div id="timer">Time: <span id="time-left">60</span>s</div>
   </main>
 
   <script src="assets/js/script.js"></script>
